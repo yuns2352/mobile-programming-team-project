@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjectAndroid</string>
+
+    <!-- Meal screen -->
+    <string name="meal_title">식단 기록 (100ml/100g 기준, g 입력)</string>
+    <string name="breakfast">아침</string>
+    <string name="lunch">점심</string>
+    <string name="dinner">저녁</string>
+    <string name="food_hint">음식명</string>
+    <string name="amount_hint">섭취량 (g)</string>
+    <string name="save">저장</string>
+
+    <!-- Main screen -->
+    <string name="main_title">프로젝트1</string>
+    <string name="btn_meal">식단 입력</string>
+    <string name="btn_weight">체중 입력</string>
+    <string name="btn_report">리포트 보기</string>
+    <string name="btn_reset">데이터 리셋</string>
+
+    <!-- Report -->
+    <string name="loading">로딩중...</string>
+    <string name="no_weight">체중이 입력되지 않았습니다.</string>
+
+    <!-- Weight screen -->
+    <string name="weight_hint">체중 (kg)</string>
+    <string name="save_weight">저장</string>
+</resources>
