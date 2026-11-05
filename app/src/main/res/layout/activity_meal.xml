@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘의 식단 입력 (g)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView android:text="아침" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <AutoCompleteTextView
+            android:id="@+id/acBreakfastFood"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="음식 검색"
+            android:completionThreshold="1" />
+        <EditText
+            android:id="@+id/edtBreakfastAmount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="섭취량 (g)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="점심" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <AutoCompleteTextView
+            android:id="@+id/acLunchFood"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="음식 검색"
+            android:completionThreshold="1" />
+        <EditText
+            android:id="@+id/edtLunchAmount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="섭취량 (g)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="저녁" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <AutoCompleteTextView
+            android:id="@+id/acDinnerFood"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="음식 검색"
+            android:completionThreshold="1" />
+        <EditText
+            android:id="@+id/edtDinnerAmount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="섭취량 (g)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveMeals"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="저장하기" />
+
+    </LinearLayout>
+</ScrollView>

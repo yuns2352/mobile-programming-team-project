@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutStep1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 오늘의 식단"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/txtFoodLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="데이터 로딩중..."
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/txtTotalKcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="총 섭취: 0 kcal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E53935"
+                android:gravity="end"
+                android:layout_marginBottom="40dp" />
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="운동 처방 받기 (다음)"
+                android:textSize="18sp"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutStep2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 맞춤 운동 처방"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운동 가능한 시간(분)을 입력하세요"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edtTimeInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="예: 30"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnDoCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결과 보기"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:id="@+id/imgSelected"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/txtSelectedName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtSelectedResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="40dp" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="처방 확인 완료" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
